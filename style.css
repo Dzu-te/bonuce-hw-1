@@ -69,6 +69,7 @@
     z-index: 1;
     background-color: lightblue;
     width: 35%;
+    opacity: 0.5;
   }
 
   .sidebar-list {
