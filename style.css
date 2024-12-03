@@ -20,6 +20,8 @@
   color: red;
 }
 
+
+
 .header {
   background-color: blue;
 }
@@ -132,6 +134,14 @@
     margin-left: 20%;
     margin-top: 40px;
     font-size: 2rem;
+  }
+
+  .hidden {
+    visibility: visible;
+    /* Бокова панель видима при ширині більше 800px */
+    opacity: 1;
+    /* Відновлюємо непрозорість */
+    pointer-events: auto;
   }
 
 
