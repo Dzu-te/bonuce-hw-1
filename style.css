@@ -1,11 +1,28 @@
 .global-container {
   display: grid;
+
 }
 
 .container {
   border: 1px solid black;
   height: 200px;
   grid-column: 2;
+}
+
+.sidebar-list {
+  list-style-type: none;
+  margin-left: 20%;
+  margin-top: 40px;
+  font-size: 2rem;
+}
+
+.item {
+  margin-bottom: 20px;
+}
+
+.item:hover {
+  cursor: pointer;
+  color: red;
 }
 
 .header {
@@ -42,8 +59,12 @@
   .content {
     height: 400px;
   }
+
+
 }
 
+
+/* Tablet */
 @media screen and (min-width: 800px) {
 
   .global-container {
@@ -54,6 +75,7 @@
 
   .header {
     grid-column: 2/ 4;
+    height: auto;
   }
 
   .content {
@@ -76,48 +98,56 @@
     grid-row: 4;
   }
 
+  .sidebar {
+    grid-column: 1;
+    grid-row: 1/5;
+    height: auto;
+  }
+
 
 }
+
+/* Desktop */
 
 @media screen and (min-width: 1200px) {
 
   .global-container {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1.5fr 2fr 1fr 2fr;
   }
 
 
 
   .header {
-    grid-column: 1/4;
+    grid-column: 2/5;
     height: auto;
   }
 
   .content {
-    grid-column: 1/4;
+    grid-column: 2/5;
     grid-row: 4;
     height: auto;
   }
 
   .sign-up {
-    grid-column: 1/4;
+    grid-column: 2/5;
     grid-row: 3;
   }
 
   .feature {
-    grid-column: 1;
-    grid-row: 2;
-    height: auto;
-  }
-
-  .feature-three {
     grid-column: 2;
     grid-row: 2;
     height: auto;
   }
 
-  .feature-two {
+  .feature-three {
     grid-column: 3;
+    grid-row: 2;
+    height: auto;
+  }
+
+  .feature-two {
+    grid-column: 4;
     grid-row: 2;
     height: auto;
   }
